@@ -9,9 +9,7 @@ def get_company_info(company_number):
 					'Jurisdiction': 'jurisdiction', 'Type': 'type', 'Registered office address': 'registered_office_address'}
 	
 	url = 'https://api.companieshouse.gov.uk/company/' + company_number
-	get_info = requests.get(url, auth=('OZ7xEXg13wiq6sjvck3FBW_DwoQm8MSxjdUjyiqJ', ''))
-
-	#print("Status code:", get_info.status_code)
+	get_info = requests.get(url, auth=('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX', '')
 
 	if get_info.status_code != 200:
 		print("Unable to make API call to get company information.")
